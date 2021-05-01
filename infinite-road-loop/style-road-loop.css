@@ -1,0 +1,69 @@
+body{
+display: flex ;
+justify-content: center ;
+align-items: center ;
+margin: 0 ;
+padding: 0% 5% ;
+font-size: 100px ;
+
+}
+
+#main{
+bottom: 0 ;
+position: relative ;
+width: 50%;
+height: 6.2em ;
+overflow: hidden ;
+}
+
+#contener {
+position: absolute ;
+padding: 0 ;
+margin: 0% ;
+bottom: 0 ;
+width: 100% ;
+height: 1000% ;
+transform-origin: 50% 100% ;
+transform: perspective(275px) rotateX(35deg) ;
+background-image: url("images/road3.png") ;
+background-size: 100% ;
+box-sizing: content-box;
+}
+
+#bg{
+position: absolute ;
+padding: 0 ;
+margin: 0 ;
+width: 100% ;
+height: 10000% ;
+animation: titles 5s infinite linear -5s ;
+animation-direction: reverse ;
+animation-fill-mode: backwards ;
+animation-delay: 0s ;
+animation-timing-function: linear ;
+background-image: url("images/road3.png") ;
+background-size: 100% ;
+
+}
+
+
+@keyframes titles {
+  0% {
+    top: 37.3%;
+    opacity: 1;
+  }
+  100% {
+    top: 0%;
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
